@@ -62097,8 +62097,8 @@ case 5:return A.O(null,r)
 case 1:return A.N(p,r)}})
 return A.P($async$q0,r)},
 RN(){var s=document.createElement("a")
-s.href="assets/Dhinesh_Kumar_Senior_Software_Tester_4_Years_Exp.pdf"
-s.download="Dhinesh_Kumar_Senior_Software_Tester_4_Years_Exp.pdf"
+s.href="assets/assets/Dhinesh_Kumar_Senior_Software_Tester_4_Years_Exp.pdf"
+s.download="Dhinesh_Kumar_Resume.pdf"
 s.click()},
 S(a){var s,r,q,p,o,n,m,l,k,j,i,h,g=this,f=null,e="\xa9 2026 DHINESH KUMAR.D",d=t.w,c=A.c9(a,f,d).w.a.a
 A.c9(a,f,d).toString
