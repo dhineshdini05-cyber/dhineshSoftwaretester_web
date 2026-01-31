@@ -33,11 +33,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   void initState() {
     super.initState();
     _floatingController =
-    AnimationController(duration: const Duration(seconds: 3), vsync: this)
-      ..repeat(reverse: true);
+        AnimationController(duration: const Duration(seconds: 3), vsync: this)
+          ..repeat(reverse: true);
     _particleController =
-    AnimationController(duration: const Duration(seconds: 20), vsync: this)
-      ..repeat();
+        AnimationController(duration: const Duration(seconds: 20), vsync: this)
+          ..repeat();
   }
 
   @override
@@ -77,12 +77,16 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     }
   }
 
+  // --- RESUME DOWNLOAD FUNCTION (FIXED) ---
   void _downloadResume() {
-    const String assetPath = 'assets/Dhinesh_Kumar_Senior_Software_Tester_4_Years_Exp.pdf';
+    // FIXED: GitHub Pages-il 'assets/assets/' endru path irukkum.
+    // Unga file 'images' folder-il illamal direct-ah 'assets' il iruppathaal
+    // 'assets/assets/Filename.pdf' endru kodukka vendum.
+    const String assetPath = 'assets/assets/Dhinesh_Kumar_Senior_Software_Tester_4_Years_Exp.pdf';
+    
     if (kIsWeb) {
       html.AnchorElement anchorElement = html.AnchorElement(href: assetPath);
-      anchorElement.download =
-      "Dhinesh_Kumar_Senior_Software_Tester_4_Years_Exp.pdf";
+      anchorElement.download = "Dhinesh_Kumar_Resume.pdf";
       anchorElement.click();
     } else {
       _launchURL(resumeLink);
@@ -95,7 +99,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     final height = MediaQuery.of(context).size.height;
 
     return Scaffold(
-      key: _scaffoldKey, // Assigned key here
+      key: _scaffoldKey,
       backgroundColor: _bgColor,
       // Drawer for Mobile View (slides from left)
       drawer: width < 1024 ? _buildDrawer() : null,
