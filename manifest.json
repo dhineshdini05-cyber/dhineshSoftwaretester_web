@@ -1,11 +1,11 @@
 {
-    "name": "flutter_portfolio",
-    "short_name": "flutter_portfolio",
-    "start_url": ".",
+    "name": "Dhinesh Kumar | Senior Software Tester",
+    "short_name": "Dhinesh Portfolio",
+    "start_url": "/dhineshSoftwaretester_web/",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#0F1219",
+    "theme_color": "#FF5722",
+    "description": "Professional Portfolio of Dhinesh Kumar - Senior Software Tester & Flutter Developer.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
