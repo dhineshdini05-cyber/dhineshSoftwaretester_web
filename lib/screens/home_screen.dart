@@ -86,7 +86,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     
     if (kIsWeb) {
       html.AnchorElement anchorElement = html.AnchorElement(href: assetPath);
-      anchorElement.download = "Dhinesh_Kumar_Resume.pdf";
+      anchorElement.download = "Dhinesh_Kumar_Senior_Software_Tester_4_Years_Exp.pdf";
       anchorElement.click();
     } else {
       _launchURL(resumeLink);
